@@ -1,0 +1,26 @@
+//
+//  PrefixHeader.pch
+//  CHCarouselView
+//
+//  Created by arnoldxiao on 2017/11/17.
+//  Copyright © 2017年 arnoldxiao. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+//  本机屏幕宽度和高度
+#define kFullScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kFullScreenHeight [UIScreen mainScreen].bounds.size.height
+
+//  标准Size，以iPhone5 / iPhone5S / iPhone5C / iPhoneSE屏幕尺寸为标准
+#define kStandardSize CGSizeMake(320.0f, 568.0f)
+
+//  可伸缩的宽度和高度
+#define kFlexibleWidth(w) ((w * kFullScreenWidth) / kStandardSize.width)
+#define kFlexibleHeight(h) ((h * kFullScreenHeight) / kStandardSize.height)
+
+#endif /* PrefixHeader_pch */

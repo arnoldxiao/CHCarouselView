@@ -13,6 +13,14 @@
 		E3C1106A1FBEDD5100658522 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3C110691FBEDD5100658522 /* Assets.xcassets */; };
 		E3C1106D1FBEDD5100658522 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3C1106B1FBEDD5100658522 /* LaunchScreen.storyboard */; };
 		E3C110701FBEDD5100658522 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E3C1106F1FBEDD5100658522 /* main.m */; };
+		E3C1108B1FBEE0C000658522 /* image01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3C110831FBEE0BF00658522 /* image01.jpg */; };
+		E3C1108D1FBEE0C000658522 /* image04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3C110851FBEE0BF00658522 /* image04.jpg */; };
+		E3C1108E1FBEE0C000658522 /* image07.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3C110861FBEE0BF00658522 /* image07.jpg */; };
+		E3C1108F1FBEE0C000658522 /* image06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3C110871FBEE0BF00658522 /* image06.jpg */; };
+		E3C110901FBEE0C000658522 /* image03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3C110881FBEE0BF00658522 /* image03.jpg */; };
+		E3C110911FBEE0C000658522 /* image05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3C110891FBEE0BF00658522 /* image05.jpg */; };
+		E3C110921FBEE0C000658522 /* image02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3C1108A1FBEE0BF00658522 /* image02.jpg */; };
+		E3C110951FBEE16000658522 /* CHCarouselView.m in Sources */ = {isa = PBXBuildFile; fileRef = E3C110941FBEE16000658522 /* CHCarouselView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +34,16 @@
 		E3C1106C1FBEDD5100658522 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3C1106E1FBEDD5100658522 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3C1106F1FBEDD5100658522 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E3C110831FBEE0BF00658522 /* image01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image01.jpg; sourceTree = "<group>"; };
+		E3C110851FBEE0BF00658522 /* image04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image04.jpg; sourceTree = "<group>"; };
+		E3C110861FBEE0BF00658522 /* image07.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image07.jpg; sourceTree = "<group>"; };
+		E3C110871FBEE0BF00658522 /* image06.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image06.jpg; sourceTree = "<group>"; };
+		E3C110881FBEE0BF00658522 /* image03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image03.jpg; sourceTree = "<group>"; };
+		E3C110891FBEE0BF00658522 /* image05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image05.jpg; sourceTree = "<group>"; };
+		E3C1108A1FBEE0BF00658522 /* image02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image02.jpg; sourceTree = "<group>"; };
+		E3C110931FBEE16000658522 /* CHCarouselView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHCarouselView.h; sourceTree = "<group>"; };
+		E3C110941FBEE16000658522 /* CHCarouselView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHCarouselView.m; sourceTree = "<group>"; };
+		E3C110961FBEF13500658522 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +76,14 @@
 		E3C1105F1FBEDD5100658522 /* CHCarouselView */ = {
 			isa = PBXGroup;
 			children = (
+				E3C110761FBEDF0000658522 /* res */,
+				E3C110961FBEF13500658522 /* PrefixHeader.pch */,
 				E3C110601FBEDD5100658522 /* AppDelegate.h */,
 				E3C110611FBEDD5100658522 /* AppDelegate.m */,
 				E3C110631FBEDD5100658522 /* ViewController.h */,
 				E3C110641FBEDD5100658522 /* ViewController.m */,
+				E3C110931FBEE16000658522 /* CHCarouselView.h */,
+				E3C110941FBEE16000658522 /* CHCarouselView.m */,
 				E3C110661FBEDD5100658522 /* Main.storyboard */,
 				E3C110691FBEDD5100658522 /* Assets.xcassets */,
 				E3C1106B1FBEDD5100658522 /* LaunchScreen.storyboard */,
@@ -69,6 +91,20 @@
 				E3C1106F1FBEDD5100658522 /* main.m */,
 			);
 			path = CHCarouselView;
+			sourceTree = "<group>";
+		};
+		E3C110761FBEDF0000658522 /* res */ = {
+			isa = PBXGroup;
+			children = (
+				E3C110831FBEE0BF00658522 /* image01.jpg */,
+				E3C1108A1FBEE0BF00658522 /* image02.jpg */,
+				E3C110881FBEE0BF00658522 /* image03.jpg */,
+				E3C110851FBEE0BF00658522 /* image04.jpg */,
+				E3C110891FBEE0BF00658522 /* image05.jpg */,
+				E3C110871FBEE0BF00658522 /* image06.jpg */,
+				E3C110861FBEE0BF00658522 /* image07.jpg */,
+			);
+			path = res;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,9 +165,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3C110911FBEE0C000658522 /* image05.jpg in Resources */,
+				E3C110921FBEE0C000658522 /* image02.jpg in Resources */,
 				E3C1106D1FBEDD5100658522 /* LaunchScreen.storyboard in Resources */,
 				E3C1106A1FBEDD5100658522 /* Assets.xcassets in Resources */,
+				E3C1108B1FBEE0C000658522 /* image01.jpg in Resources */,
+				E3C1108F1FBEE0C000658522 /* image06.jpg in Resources */,
 				E3C110681FBEDD5100658522 /* Main.storyboard in Resources */,
+				E3C1108E1FBEE0C000658522 /* image07.jpg in Resources */,
+				E3C1108D1FBEE0C000658522 /* image04.jpg in Resources */,
+				E3C110901FBEE0C000658522 /* image03.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +188,7 @@
 				E3C110651FBEDD5100658522 /* ViewController.m in Sources */,
 				E3C110701FBEDD5100658522 /* main.m in Sources */,
 				E3C110621FBEDD5100658522 /* AppDelegate.m in Sources */,
+				E3C110951FBEE16000658522 /* CHCarouselView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +324,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F6MKBTS8DW;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CHCarouselView/PrefixHeader.pch";
 				INFOPLIST_FILE = CHCarouselView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.arnoldxiao.CHCarouselView;
@@ -294,6 +339,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F6MKBTS8DW;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CHCarouselView/PrefixHeader.pch";
 				INFOPLIST_FILE = CHCarouselView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.arnoldxiao.CHCarouselView;
