@@ -53,7 +53,7 @@
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
     NSLog(@"%@-%f", NSStringFromSelector(_cmd), scrollView.contentOffset.x);
     _beginOffsetX = scrollView.contentOffset.x;
-    _currentPage = _beginOffsetX / CGRectGetWidth(self.scrollView.frame);
+    _currentPage = (_beginOffsetX + CGRectGetWidth(self.scrollView.frame) / 2.0f) / CGRectGetWidth(self.scrollView.frame);
 }
 
 - (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset {
@@ -62,26 +62,29 @@
     
     CGFloat currentOffsetX = scrollView.contentOffset.x;
     
-//    if (currentOffsetX - _beginOffsetX > kFlexibleWidth(50)) {
-//        //  往右
-//        if (_currentPage != self.images.count - 1) {
-//            _currentPage++;
-//        }
-//    } else if (currentOffsetX - _beginOffsetX < -kFlexibleWidth(50)) {
-//        //  往左
-//        if (_currentPage != 0) {
-//            _currentPage--;
-//        }
-//    }
+    CGFloat targetOffsetX = (*targetContentOffset).x;
+    CGFloat baseline = fabs(currentOffsetX) + CGRectGetWidth(self.scrollView.frame) / 2.0f;
     
-//    CGPoint point = CGPointMake(_currentPage * CGRectGetWidth(self.scrollView.frame), 0);
+    //  滑动距离超过指定多少，就需要翻页
+    CGFloat spacing = CGRectGetWidth(self.scrollView.frame) / 5.0f;
+//    CGFloat spacing = 0;
     
-    CGFloat centerX = fabs(currentOffsetX) + CGRectGetWidth(self.scrollView.frame) / 2;
-    NSInteger page = centerX / CGRectGetWidth(self.scrollView.frame);
-    CGFloat offsetX = page * -CGRectGetWidth(self.scrollView.frame);
+    if (targetOffsetX > _beginOffsetX + spacing) {
+        //  手指往左滑动
+        if (_currentPage != self.images.count - 1) {
+            baseline = currentOffsetX + CGRectGetWidth(self.scrollView.frame) - spacing;
+        }
+    } else if (targetOffsetX < _beginOffsetX - spacing) {
+        //  手指往右滑动
+        if (_currentPage) {
+            baseline = currentOffsetX - spacing;
+        }
+    }
     
-//    [self.scrollView setContentOffset:CGPointMake(offsetX, 0) animated:YES];
-    *targetContentOffset = CGPointMake(offsetX, 0);
+    _currentPage = baseline / CGRectGetWidth(self.scrollView.frame);
+    
+    *targetContentOffset = CGPointMake(_currentPage * CGRectGetWidth(self.scrollView.frame), 0);
+    
 }
 
 - (UIScrollView *)scrollView {

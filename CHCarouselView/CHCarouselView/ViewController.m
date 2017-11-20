@@ -19,6 +19,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    self.view.backgroundColor = UIColor.lightTextColor;
+    
     NSMutableArray<UIImage *> *images = [NSMutableArray array];
     
     for (int i = 0; i < 7; i++) {
